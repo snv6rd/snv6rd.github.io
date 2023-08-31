@@ -36,6 +36,9 @@
          &nbsp &nbsp &nbsp <label for="mood">Name:</label> 
          <input type="text" id="name" />
          <br /><br /> 
+         &nbsp &nbsp &nbsp <label for="mood">Num:</label> 
+         <input type="number" id="num" />
+         <br /><br /> 
      
          <button onclick="Btn1()">Btn1</button> &nbsp
          
@@ -47,7 +50,9 @@
      
          function Btn1() {
            const name = document.getElementById("name").value;
-           console.log('Btn1', name);
+           console.log('name', name);
+           const num = document.getElementById("num").value;
+           console.log('num', num, num**2);
          }
      
        </script>
